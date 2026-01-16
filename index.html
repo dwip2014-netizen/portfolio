@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Digital Craft Agency | Mini Website, Poster & Logo Design</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Digital Craft Agency offers premium mini website design, poster design, logo design and digital marketing services.">
+<meta name="keywords" content="Digital Craft Agency, Mini Website Design, Poster Design, Logo Design, Digital Marketing">
+<meta name="author" content="Digital Craft Agency">
+<meta name="robots" content="index, follow">
+
+<style>
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#0f172a;color:#e5e7eb}
+a{text-decoration:none}
+
+/* ===== TOP MARQUEE ===== */
+.marquee-wrapper{
+    width:100%;
+    height:80px;
+    display:flex;
+    align-items:center;
+    background:#020617;
+    overflow:hidden;
+    border-bottom:2px solid #1e293b;
+}
+.marquee-text{
+    white-space:nowrap;
+    font-size:32px;
+    font-weight:800;
+    animation:moveRTL 10s linear infinite, colorChange 4s linear infinite;
+}
+@keyframes moveRTL{
+    0%{transform:translateX(100%)}
+    100%{transform:translateX(-100%)}
+}
+@keyframes colorChange{
+    0%{color:#22d3ee}
+    25%{color:#38bdf8}
+    50%{color:#a78bfa}
+    75%{color:#f472b6}
+    100%{color:#22d3ee}
+}
+
+/* HEADER */
+header{background:#020617;padding:15px 40px;border-bottom:1px solid #1e293b;overflow:hidden}
+header img{height:60px}
+nav{float:right;margin-top:18px}
+nav a{color:#e5e7eb;margin-left:22px;font-weight:bold}
+nav a:hover{color:#38bdf8}
+
+/* HERO */
+.hero{padding:100px 40px;text-align:center;background:radial-gradient(circle at top,#1e40af,#020617)}
+.hero-title{
+font-size:44px;font-weight:800;
+background:linear-gradient(90deg,#22d3ee,#38bdf8,#a78bfa,#f472b6,#22d3ee);
+background-size:400% 100%;
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+animation:grad 6s ease infinite}
+.hero-underline{width:220px;height:5px;margin:16px auto 30px;border-radius:20px;
+background:linear-gradient(90deg,#22d3ee,#38bdf8,#a78bfa,#f472b6,#22d3ee);
+background-size:400% 100%;animation:grad 6s ease infinite}
+.hero p{max-width:760px;margin:auto;font-size:18px;color:#cbd5f5}
+.btn{display:inline-block;margin-top:35px;padding:14px 34px;background:#22c55e;color:#fff;border-radius:30px;font-weight:bold}
+
+/* SECTION */
+.section{padding:80px 40px;max-width:1200px;margin:auto}
+.section-title{text-align:center;font-size:34px}
+.section-underline{width:120px;height:3px;margin:10px auto 40px;background:#38bdf8}
+
+/* SERVICES */
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:30px}
+.service-card{background:#020617;padding:30px;border-radius:18px;border:1px solid #1e293b;transition:.3s}
+.service-card:hover{transform:translateY(-8px);border-color:#38bdf8}
+.service-card h3{color:#38bdf8}
+
+/* PORTFOLIO */
+.portfolio{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px}
+.portfolio img{width:100%;height:220px;object-fit:cover;border-radius:18px;border:1px solid #1e293b}
+
+/* ABOUT */
+.about{background:#020617;border-radius:20px;padding:50px;text-align:center}
+
+/* CONTACT */
+.contact-box{background:#020617;padding:40px;border-radius:20px;max-width:700px;margin:auto}
+.contact-box input,.contact-box textarea{width:100%;margin-top:15px;padding:14px;border-radius:10px;border:none}
+.contact-box textarea{min-height:120px}
+.contact-box button{margin-top:25px;padding:14px 40px;background:#6366f1;color:#fff;border:none;border-radius:12px;font-size:16px}
+#wa_sending{display:none;margin-top:15px;text-align:center;color:#38bdf8}
+
+/* FOOTER */
+footer{background:#020617;padding:25px;text-align:center;color:#94a3b8;font-size:14px}
+
+/* FLOATING BAR */
+.social-float{position:fixed;right:20px;bottom:25px;display:flex;flex-direction:column;gap:12px;z-index:999}
+.social-float a{width:55px;height:55px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:26px}
+.social-whatsapp{background:#25D366}
+.social-facebook{background:#1877F2}
+.social-float img{width:28px;height:28px}
+
+/* ANIMATION */
+@keyframes grad{
+0%{background-position:0% 50%}
+50%{background-position:100% 50%}
+100%{background-position:0% 50%}}
+</style>
+</head>
+
+<body>
+
+<!-- ===== MARQUEE TOP ===== -->
+<div class="marquee-wrapper">
+    <div class="marquee-text">
+        WELCOME TO DIGITAL CRAFT AGENCY
+    </div>
+</div>
+
+<header class="site-header">  
+    <img src="logo.png.png" alt="Digital Craft Agency Logo" class="logo">  
+
+    <div class="auto-menu">  
+        <a href="#services">Services</a>  
+        <a href="#gallery">Gallery</a>  
+        <a href="#about">About</a>  
+        <a href="#contact">Contact</a>  
+        <a href="https://www.facebook.com/profile.php?id=61586091863897" target="_blank">Facebook</a>  
+    </div>
+</header>  
+
+<style>  
+.site-header{  
+    display:flex;  
+    align-items:center;  
+    justify-content:space-between;  
+    padding:15px 25px;  
+}  
+
+/* LOGO (ROTATION REMOVED, GLOW KEPT) */
+.logo{  
+    height:45px;  
+    /* animation: logoRotate 8s linear infinite;  <-- removed */
+    filter: drop-shadow(0 0 6px #22d3ee)
+            drop-shadow(0 0 14px #a855f7)
+            drop-shadow(0 0 22px #22d3ee);
+}  
+
+/* MENU */  
+.auto-menu{  
+    display:flex;  
+    gap:25px;  
+    font-family:Arial, Helvetica, sans-serif;  
+}  
+
+.auto-menu a{  
+    text-decoration:none;  
+    font-size:16px;  
+    font-weight:600;  
+    animation: colorLoop 6s linear infinite;  
+}  
+
+.auto-menu a:nth-child(1){animation-delay:0s;}  
+.auto-menu a:nth-child(2){animation-delay:1s;}  
+.auto-menu a:nth-child(3){animation-delay:2s;}  
+.auto-menu a:nth-child(4){animation-delay:3s;}  
+.auto-menu a:nth-child(5){animation-delay:4s;}  
+
+@keyframes colorLoop{  
+    0%   {color:#22d3ee;}  
+    25%  {color:#a855f7;}  
+    50%  {color:#f43f5e;}  
+    75%  {color:#22c55e;}  
+    100% {color:#22d3ee;}  
+}  
+</style>
+
+
+<style>
+.site-header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between; /* logo left, menu right */
+    padding:15px 25px;
+}
+
+.logo{
+    height:45px; /* adjust if needed */
+}
+
+/* MENU */
+.auto-menu{
+    display:flex;
+    gap:25px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.auto-menu a{
+    text-decoration:none;
+    font-size:16px;
+    font-weight:600;
+    animation: colorLoop 6s linear infinite;
+}
+
+/* loop delay */
+.auto-menu a:nth-child(1){animation-delay:0s;}
+.auto-menu a:nth-child(2){animation-delay:1s;}
+.auto-menu a:nth-child(3){animation-delay:2s;}
+.auto-menu a:nth-child(4){animation-delay:3s;}
+.auto-menu a:nth-child(5){animation-delay:4s;}
+
+@keyframes colorLoop{
+    0%   {color:#22d3ee;}
+    25%  {color:#a855f7;}
+    50%  {color:#f43f5e;}
+    75%  {color:#22c55e;}
+    100% {color:#22d3ee;}
+}
+</style>
+
+	
+	<!-- ===== POSTER SLIDER SECTION ===== -->
+<section class="photo-gallery" aria-label="About Us Gallery" style="margin-top:20px;display:flex;justify-content:center;">
+
+<style>
+/* ===== SLIDER CONTAINER ===== */
+.poster-slider{
+    width:1020px;
+    height:427px;
+    position:relative;
+    overflow:hidden;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.5);
+}
+
+/* ===== SLIDES ===== */
+.poster-slide{
+    position:absolute;
+    width:100%;
+    height:100%;
+    opacity:0;
+    transition:opacity 1s ease-in-out;
+}
+
+.poster-slide img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.poster-slide.active{
+    opacity:1;
+}
+
+/* ===== DOTS ===== */
+.poster-dots{
+    position:absolute;
+    bottom:15px;
+    left:50%;
+    transform:translateX(-50%);
+    display:flex;
+    gap:10px;
+}
+
+.poster-dots span{
+    width:12px;
+    height:12px;
+    background:rgba(255,255,255,0.5);
+    border-radius:50%;
+    cursor:pointer;
+}
+
+.poster-dots span.active{
+    background:#ffffff;
+}
+</style>
+
+<div class="poster-slider">
+
+    <div class="poster-slide active">
+        <img src="Untitled-1.jpg" alt="Poster 1">
+    </div>
+    <div class="poster-slide">
+        <img src="Untitled-2.jpg" alt="Poster 2">
+    </div>
+    <div class="poster-slide">
+        <img src="frenetbherhrebhreh.jpg" alt="Poster 3">
+    </div>
+    <div class="poster-slide">
+        <img src="rhrhrhrhr.jpg" alt="Poster 4">
+    </div>
+    <div class="poster-slide">
+        <img src="tt.jpg" alt="Poster 5">
+    </div>
+    <div class="poster-slide">
+        <img src="gggggg.jpg" alt="Poster 6">
+    </div>
+    <div class="poster-slide">
+        <img src="frtet.jpg" alt="Poster 7">
+    </div>
+
+    <div class="poster-dots"></div>
+</div>
+
+<script>
+let slides = document.querySelectorAll(".poster-slide");
+let dotsBox = document.querySelector(".poster-dots");
+let currentIndex = 0;
+
+/* Create dots */
+slides.forEach((_, i) => {
+    let dot = document.createElement("span");
+    if(i === 0) dot.classList.add("active");
+    dot.addEventListener("click", () => showSlide(i));
+    dotsBox.appendChild(dot);
+});
+
+let dots = document.querySelectorAll(".poster-dots span");
+
+function showSlide(i){
+    slides[currentIndex].classList.remove("active");
+    dots[currentIndex].classList.remove("active");
+
+    currentIndex = i;
+
+    slides[currentIndex].classList.add("active");
+    dots[currentIndex].classList.add("active");
+}
+
+/* Auto slide */
+setInterval(() => {
+    showSlide((currentIndex + 1) % slides.length);
+}, 2000);
+</script>
+
+</section>
+
+
+<section class="hero">
+<h1 class="hero-title">DIGITAL CRAFT AGENCY</h1>
+<div class="hero-underline"></div>
+<p><b>Digital Craft Agency is an online marketplace specialized in offering unique gift products, photo printing, photo.</b></p>
+<a class="btn" href="https://wa.me/919339016461" target="_blank">Chat on WhatsApp</a>
+</section>
+
+<section id="services" class="section">
+<h2 class="section-title">Our Services</h2>
+<div class="section-underline"></div>
+<div class="services">
+<div class="service-card"><h3>Mini Website Design</h3></div>
+<div class="service-card"><h3>Poster Design</h3></div>
+<div class="service-card"><h3>Logo Design</h3></div>
+<div class="service-card"><h3>Digital Marketing</h3></div>
+</div>
+</section>
+
+<section id="portfolio" class="section">
+<h2 class="section-title">Gallery</h2>
+<div class="section-underline"></div>
+<div class="portfolio">
+<img src="portfolio1.jpg.jpeg">
+<img src="portfolio6.jpg.jpeg.jpeg.png">
+<img src="portfolio7.jpg.jpeg.jpeg.png">
+<img src="portfolio8.jpg.jpeg.jpeg.png">
+<img src="portfolio5.jpg.jpeg.jpeg">
+<img src="portfolio2.jpg.jpeg">
+<img src="portfolio3.jpg.png.jpeg">
+<img src="portfolio4.jpg.png">
+</div>
+</section>
+
+<section id="about" class="section">
+<div class="about">
+<h1 class="hero-title">About Digital Craft Agency</h2>
+<div class="hero-underline"></div>
+<p>
+        <b>Digital Craft Agency</b> is a creative digital design agency dedicated to helping 
+        businesses and individuals build a strong and professional visual presence.
+        We specialize in <b>Mini Website Design</b>, <b>Poster Design</b>, and 
+        <b>Logo Design</b>, delivering clean, modern, and effective design solutions.
+    </p>
+
+    <p>
+        Our mission is to transform ideas into impactful digital designs that communicate 
+        clearly and leave a lasting impression. We focus on <b>simplicity</b>, 
+        <b>visual balance</b>, and <b>brand consistency</b> to ensure every project 
+        reflects professionalism and trust.
+    </p>
+
+    <p>
+        We are committed to <b>quality</b>, <b>affordability</b>, and <b>timely delivery</b>.
+        Every project is handled with care, creativity, and a client-first approach.
+    </p>
+</div>
+</section>
+
+<section id="contact" class="section">
+<h2 class="section-title">Contact Us</h2>
+<div class="section-underline"></div>
+<div class="contact-box">
+<form onsubmit="sendWhatsAppEmail(); return false;">
+<input type="text" id="wa_name" placeholder="Your Name *" required>
+<input type="email" id="wa_email" placeholder="Your Email">
+<input type="tel" id="wa_phone" placeholder="Mobile *" required>
+<textarea id="wa_message" placeholder="Your Message *" required></textarea>
+<button type="submit">Send on WhatsApp & Email</button>
+<div id="wa_sending">Sending…</div>
+</form>
+</div>
+</section>
+
+<footer>
+© 2026 Digital Craft Agency<br><br>
+A.J.C bose road, Kolkata, India, West Bengal<br>
+</footer>
+
+<div class="social-float">
+<a class="social-whatsapp" href="https://wa.me/919339016461" target="_blank">💬</a>
+<a class="social-facebook" href="https://www.facebook.com/profile.php?id=61586091863897" target="_blank">
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png">
+</a>
+</div>
+
+<script>
+function sendWhatsAppEmail(){
+    var sending = document.getElementById("wa_sending");
+    sending.style.display="block";
+
+    var name    = document.getElementById("wa_name").value;
+    var email   = document.getElementById("wa_email").value;
+    var phone   = document.getElementById("wa_phone").value;
+    var message = document.getElementById("wa_message").value;
+
+    var waMsg = "Hello Digital Craft Agency%0A"
+              + "Name: " + name + "%0A"
+              + "Email: " + email + "%0A"
+              + "Mobile: " + phone + "%0A"
+              + "Message: " + message;
+
+    window.open("https://wa.me/919339016461?text=" + waMsg, "_blank");
+
+    var subject = "New Website Enquiry";
+    var body =
+        "Name: " + name + "\n"
+      + "Email: " + email + "\n"
+      + "Mobile: " + phone + "\n\n"
+      + "Message:\n" + message;
+
+    window.location.href =
+        "mailto:dwip2014@gmail.com"
+        + "?subject=" + encodeURIComponent(subject)
+        + "&body=" + encodeURIComponent(body);
+
+    sending.style.display="none";
+}
+</script>
+
+</body>
+</html>
